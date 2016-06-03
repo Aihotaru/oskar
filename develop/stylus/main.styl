@@ -1,0 +1,162 @@
+@import "nib"
+@import "color_fonts.styl"
+@import "mixins.styl"
+
+html
+  position relative
+  min-height 100%
+body
+  margin-bottom 60px
+
+/*
+ * header navigation
+ */
+
+.nav-but
+  width 52px
+  height 52px
+  background headerButton
+  font-size 22px
+  padding 6px 6px
+  border-radius 0
+.side-nav
+  float left
+.nav-cont
+  width 100%
+  padding-left 0
+  padding-right 0
+  margin 0
+
+.breadcrumb
+  background transparent!important
+  padding 15px!important
+  margin-bottom 0
+  margin-left 50px
+.breadcrumb
+  >li+li
+    &:before
+      content "\003E"!important
+
+.but-dropdown
+  font-size 18px
+.dropdown-toggle
+  width 100%
+.open
+  i
+  span
+    color dirtyWhite
+.navbar-default .navbar-nav>.open>a
+  background blackButton!important
+.dropdown-menu
+  width 150%
+  background #c0c0c0
+  li
+    &:hover
+      color blackFont
+    a
+    i
+      color dropdownColor
+      font-weight bold
+
+/*
+ * search
+ */
+
+.search-but
+  i
+    padding 6px
+.search-area
+  height 40px
+.drop-but
+  background blackButton
+  color dirtyWhite
+  width 100%
+  font-size 18px
+  &:hover
+  &:active
+  &:visited
+    background blackButton
+.search-panel
+  padding 0
+.search-input
+  height 40px
+  width 100%
+button
+  &:active
+  &:focus
+    outline none!important
+
+/*
+ * main content home table
+ */
+
+.row
+  margin-top 110px
+thead
+  background blackFont
+  color: dirtyWhite
+.hidding
+  display none
+.hide-all
+  border none
+  border-left 1px solid liteGrayCol
+  border-radius 0
+  &:hover
+    background transparent
+
+/*
+ * main content actors cards
+ */
+
+.actors-title
+  font-set(25px, blackButton)
+  padding 15px
+.card
+  margin-bottom 10px
+  border 1px solid blackFont
+  border-radius 5px
+
+.card-title
+  text-align center
+  font-set(18px, blackFont)
+  padding 5px
+.desc
+  background liteGrayCol
+  margin-top 10px
+.gender
+  border 1px solid blackFont
+  border-radius 25px
+  float left
+  margin 5px
+.profa
+  padding 5px
+  text-align center
+
+.connect-info
+  font-set(18px, blackFont)
+  padding 10px 15px
+.goup-of-but
+  margin 15px 10px
+.common-info
+  padding 5px
+  margin 15px auto
+.information
+  width 150px!important
+textarea
+  resize none
+
+
+/*!
+ *footer
+ */
+
+#footer
+  position absolute
+  bottom 0
+  width 100%
+  height 60px
+  background dirtyWhite
+  border 1px solid blackFont
+  p
+    text-align center
+    padding 15px
