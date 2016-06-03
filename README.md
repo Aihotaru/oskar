@@ -1,6 +1,10 @@
-Прототип интерфейса для ПО выдачи оскаров сотрудникам жека.
+# Прототип интерфейса для ПО выдачи оскаров сотрудникам жека.
 
-установка:
--git clone
+#### установка:
+
+```sh
+-git clone https://github.com/Aihotaru/oskar
 -npm install
+-npm install --global gulp-cli
 -gulp
+```
